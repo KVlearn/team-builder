@@ -45,35 +45,18 @@ function App() {
    function editMember(editMemberInfo){
       console.log('editMemberinfo=', editMemberInfo);
       const editMemList=[...teamList]; //copying
-      let editMember;
-      editMember = editMemList.filter(item=>{
-        if(item.id !== editMemberInfo.id){
-          return item;
-        }
+       const mapNewList= editMemList.map((item)=>{
+        if(item.id == editMemberInfo.id){
+          return(editMemberInfo) 
+        }else return item;
       })
-      const newObj={...editMember,...editMemberInfo}
-      console.log('newObj=',newObj)
-      // const newobj={
-      //   id:editMember[0].id,
-      //   urname:editMember[0].urname,
-      //   email:editMember[0].email,
-      //   role:editMember[0].role}
-
-      console.log('edit member after map=',editMember);
-     // setTeamList(newMemList);   //setting back
-       setTeamList([newObj]);
-
+      
+      console.log('mapnewList=',mapNewList)
+      
+     setTeamList(mapNewList);   //setting back
+     
  }
-
-//  useEffect(()=>{
-//   //Populate the form with current member data
-//   <Forms
-//      memberToEdit={memberToEdit[0]}
-//       addMember={addMember}
-//       editMember={editMember}
-//     />
-//  },[teamList])
-
+ 
   return (
     <div className="App">
       <h1>Team Builder App!</h1>
