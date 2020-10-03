@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+  color:#B79158;
+}
+
+h2{
+ margin-left: 16rem;
+ text-align: left;
+}
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  overflow-x: hidden;
+  background-color: #be9c38;
+  background-image: url("https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+  background-size: cover;
+  background-repeat: repeat;
+  padding: 0;
+  margin: 0;
+}
+  
+.teaminfo{
+width:60%;
+color:#122440;
+margin:0 auto;
+display:flex;
+flex-wrap:wrap;
+justify-content: space-around;
+align-items: center;
+justify-self: start;
+padding:15px 20px;
+border-style: dashed;
+background-color: antiquewhite;
+opacity: 90%; 
+} 
+
+input, textarea {
+  width: 200px;
+  padding: 15px 22px;
+  margin: 10px 5px;
+  box-sizing: border-box;  
+  border: 1px solid wheat; 
+  border-radius: 4px;
+}
+
+
+label{
+  width: 200px;
+  padding: 15px 22px;
+  margin: 10px 5px;
+  font-size: 20px;
+}
+
+li{
+  color:#102540;
+  background-color: rgba(255,255,255,.5);
+  padding: 8px 90px;
+  /* margin-bottom: 15px; */
+  border-radius: 10px;
+  list-style: none;
+}
+
+button{
+  width: 8rem;
+  padding: 12px 12px;
+  margin: 10px 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color:#102540;
+  background-color:#be9c38 ;
+  border-radius:6px;
+}
+
+.edit,.remove{
+  width: 6rem;
+  padding: 10px 10px;
+  margin: 10px 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color:#102540;
+  background-color:wheat;
+  border-radius:6px;
+}
